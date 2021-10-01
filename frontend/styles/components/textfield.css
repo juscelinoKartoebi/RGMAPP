@@ -1,0 +1,24 @@
+.background{
+ background-image: url("https://rosebelgoldmines.sr/media/1139/gold3.jpg?anchor=center&mode=crop&width=1920&height=849&rnd=132167429860000000"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.TestBtn{
+	cursor: pointer;
+	background-color: rgb(181, 176, 40);
+	
+}
+.emailBox{
+	background: rgba(255,255,255,.7);
+	border-radius: 15px;
+	max-width: 500px;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	
+}

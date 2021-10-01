@@ -1,0 +1,19 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+	
+	<changeSet id = "1631021299265" author="blu-dots" failOnError= "true"
+	onValidationFail= "HALT">
+	<!-- Check if table does not exist-->
+	<preConditions onFail="MARK_RAN">
+	<not>
+	<tableExists tableName="USER_ROLE_"/>
+	</not>
+	</preConditions>
+	<createTable tableName="USER_ROLE_">
+	<column name="USER_ID_" type = "BIGINT"/>
+	<column name="ROLE_ID_" type = "BIGINT"/>
+	
+	</createTable>
+</changeSet>
+</databaseChangeLog>
